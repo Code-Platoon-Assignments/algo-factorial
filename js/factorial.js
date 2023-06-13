@@ -1,2 +1,5 @@
-exports.factorial = function(num) {
-};
+function factorial(num) {
+
+}
+
+module.exports = factorial;
