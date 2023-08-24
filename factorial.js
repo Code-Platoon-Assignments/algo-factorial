@@ -1,3 +1,9 @@
 export default function factorial(num) {
-  return 0;
+  let product = 1;
+
+  for (let i = num; i > 0; i--) {
+    product *= i;
+  }
+
+  return product;
 }
