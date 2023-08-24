@@ -1,4 +1,4 @@
-export default function factorial(num) {
+function factorial(num) {
   let product = 1;
 
   for (let i = num; i > 0; i--) {
@@ -7,3 +7,5 @@ export default function factorial(num) {
 
   return product;
 }
+
+module.exports = factorial;
