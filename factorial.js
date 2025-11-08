@@ -20,4 +20,16 @@ function factorial_recursive(num){
     return num * factorial_recursive(num-1);
 }
 
-module.exports = {factorial, factorial_recursive};
+function high_factorial(num){
+    let result = 1;
+    let newNum = num;
+    while (result != Infinity){
+        for(let i =1; i <=newNum; i++){
+        result *=i;
+        }
+        newNum +=1;
+    }
+    return newNum-1;
+}
+
+module.exports = {factorial, factorial_recursive, high_factorial};

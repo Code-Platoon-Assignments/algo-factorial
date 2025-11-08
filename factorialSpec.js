@@ -14,3 +14,7 @@ console.log(factorial_function.factorial_recursive(2) === 2);
 console.log(factorial_function.factorial_recursive(4) === 24);
 console.log(factorial_function.factorial_recursive(8) === 40320);
 console.log(factorial_function.factorial_recursive(18) === 6402373705728000);
+
+//High factorial
+console.log("Lets see how high this goes");
+console.log(factorial_function.high_factorial(1))
