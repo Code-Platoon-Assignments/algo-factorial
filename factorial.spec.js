@@ -12,12 +12,12 @@ describe("general factorial tests", () => {
     });
 });
 
-// describe("factorial edge cases"), () => {
-//     test("factorial(0"), () => {
-//         expect(factorial(0)).toBe(1)
-//     }
-//     test("factorial(1)"), () => {
-//         expect(factorial(1)).toBe(1)
-//     }
-// }
+describe("factorial edge cases", () => {
+    test("factorial(0", () => {
+        expect(factorial(0)).toBe(1)
+    })
+    test("factorial(1)", () => {
+        expect(factorial(-5)).toBe(undefined)
+    })
+})
 // Test how high of a number your program can calculate. Can you push it further?
