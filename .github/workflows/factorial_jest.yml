@@ -1,0 +1,19 @@
+name: factorial_jest
+
+on:
+  push:
+    branches:
+      - dev
+  pull-request:
+    branches:
+      - main
+  workflow_dispatch:
+
+  jobs:
+    runs-on: actions/checkout@nodev7
+    
+    steps:
+      - name: factorial-tests
+        run: npm install
+        run: npm install --save-dev jest
+        run: npm test
