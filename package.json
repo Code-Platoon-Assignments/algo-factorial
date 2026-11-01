@@ -1,0 +1,21 @@
+{
+  "name": "algo-factorial",
+  "version": "1.0.0",
+  "description": "To run `factorial.js` itself:",
+  "main": "factorial.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Platoon-Assignments/algo-factorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Code-Platoon-Assignments/algo-factorial/issues"
+  },
+  "homepage": "https://github.com/Code-Platoon-Assignments/algo-factorial#readme"
+}
