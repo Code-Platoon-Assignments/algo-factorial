@@ -4,16 +4,25 @@ on:
   push:
     branches:
       - dev
+      - main
   pull-request:
     branches:
       - main
   workflow_dispatch:
 
   jobs:
-    runs-on: actions/checkout@nodev7
-    
-    steps:
-      - name: factorial-tests
-        run: npm install
-        run: npm install --save-dev jest
-        run: npm test
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Copy code in
+          uses: action/checkout@v7
+        - name: Get node setup for JS
+          uses: actions/setup-node@v7
+          with:
+            node-version: 20
+        - name: Install dependencies
+          run: npm install
+        - name: Install Jest
+          run: npm install jest
+        - name: Run tests
+          run: npm test || echo "X tests failed" && exit 1
