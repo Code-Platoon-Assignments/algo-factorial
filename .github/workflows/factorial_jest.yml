@@ -14,8 +14,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Copy code in
-        uses: action/checkout@v7
+      - name: Checkout repository
+        uses: actions/checkout@v7
       - name: Get node setup for JS
         uses: actions/setup-node@v7
         with:
