@@ -5,24 +5,24 @@ on:
     branches:
       - dev
       - main
-  pull-request:
+  pull_request:
     branches:
       - main
   workflow_dispatch:
 
-  jobs:
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Copy code in
-          uses: action/checkout@v7
-        - name: Get node setup for JS
-          uses: actions/setup-node@v7
-          with:
-            node-version: 20
-        - name: Install dependencies
-          run: npm install
-        - name: Install Jest
-          run: npm install jest
-        - name: Run tests
-          run: npm test || echo "X tests failed" && exit 1
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy code in
+        uses: action/checkout@v7
+      - name: Get node setup for JS
+        uses: actions/setup-node@v7
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Install Jest
+        run: npm install jest
+      - name: Run tests
+        run: npm test || echo "X tests failed" && exit 1
