@@ -25,4 +25,5 @@ jobs:
       - name: Install Jest
         run: npm install jest
       - name: Run tests
-        run: npm test || echo "X tests failed" && exit 1
+        run: |
+          npm test || (echo "X tests failed" && exit 1)
